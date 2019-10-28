@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+  <title>Lottery App</title>
+</head>
+<body>
+  <div class = "header">
+    <h1 class = "app-title">Lottery App</h1>
+  </div>
+  <div class = "app-content">
+    <div class = "generator">
+      <button class = "generator-button" onClick = "generator()">
+        Genetator
+      </button>
+      
+      <span class = "tickets">
+        <h3 class = "tickets-title">Ticket Numbers</h3>
+        <ul id="numbers">
+          
+        </ul>
+      </span>
+    </div>
+    
+    <div id = "checker">
+
+      <label for = "loto-number">Loto Number</label> <br/>
+      <input name = "loto-number" id = "loto-number" type = "text"/ disabled>
+      <button id = "checker-button" onClick = "checker()" disabled>
+        Checker
+      </button>
+
+      <span id="result"></span>
+      
+    </div>
+    
+  </div>
+
+  <!-- Scripts -->
+  <script src="scripts.js"></script>
+</body>
+</html>
